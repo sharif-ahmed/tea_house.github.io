@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/c77e6dd1d8.js" crossorigin="anonymous"></script>
     <!-- tailwind & daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,6 +25,8 @@
                     colors: {
                         'yellow-color': '#FF8938',
                         'red-color': '#F00',
+                        'dark-color': '#1C1C1C',
+                        'dark-light': '#777',
                         clifford: '#da373d',
                     }
                 }
@@ -38,7 +42,7 @@
     </style>
 </head>
 
-<body class="font-manrope">
+<body class="font-manrope p-2 md:p-0">
     <!-- header section -->
     <header>
         <!-- navbar start-->
@@ -103,6 +107,37 @@
         <!-- navbar end-->
 
         <!-- banner start -->
+        <div class="">
+            <div class="hero min-h-[calc(100vh-68px)]">
+                <div class="hero-content flex-col-reverse lg:flex-row-reverse gap-5">
+                    <figure class="flex-1 relative flex justify-center">
+                        <img src="./img/banner.png" class="w-full rounded-lg " />
+                        <div
+                            class="flex gap-2 items-center rounded-[10px] bg-white shadow-xl justify-center md:w-2/5 px-3 py-2 md:py-5 absolute bottom-3 md:left-24">
+                            <i class="fa-solid fa-star text-yellow-color"></i>
+                            <div class="">
+                                <h5 class="text-[24px] md:text-[30px] font-[800]">5.00</h5>
+                                <p class="text-base font-semibold text-dark-light">Trust Pilot Ratings</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <div class="flex-1">
+                        <h1
+                            class="text-[50px] md:text-[72px] font-extrabold text-dark-color leading-[75px] md:leading-[100px]">
+                            It's good <br>
+                            tea time at The <br> Tea House</h1>
+                        <p class="py-6 text-dark-light text-[18px] font-medium leading-8">Tea and Botanical Solutions
+                            Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+                        <button class="btn 
+                            bg-gradient-to-r from-red-color to-yellow-color 
+                            border-none 
+                            hover:bg-transparent
+                             text-white text-[20px] font-bold normal-case
+                             rounded-[10px]">Explore More <img src="./img/arrow.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- banner end -->
 
     </header>
