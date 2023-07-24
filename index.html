@@ -21,6 +21,8 @@
             theme: {
                 extend: {
                     colors: {
+                        'yellow-color': '#FF8938',
+                        'red-color': '#F00',
                         clifford: '#da373d',
                     }
                 }
@@ -36,8 +38,72 @@
     </style>
 </head>
 
-<body>
+<body class="font-manrope">
+    <!-- header section -->
     <header>
+        <!-- navbar start-->
+        <nav>
+            <div class="container mx-auto">
+                <div class="navbar flex justify-between">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <label tabindex="0"
+                                class="btn bg-gradient-to-r from-red-color to-yellow-color border-none hover:bg-transparent text-white lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a
+                                        class="duration-0 hover:bg-gradient-to-r from-red-color to-yellow-color hover:text-white">Home</a>
+                                </li>
+                                <li><a
+                                        class="duration-0 hover:bg-gradient-to-r from-red-color to-yellow-color hover:text-white">About</a>
+                                </li>
+                                <li><a
+                                        class="duration-0 hover:bg-gradient-to-r from-red-color to-yellow-color hover:text-white">Blog</a>
+                                </li>
+                                <li><a
+                                        class="duration-0 hover:bg-gradient-to-r from-red-color to-yellow-color hover:text-white">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="btn bg-transparent border-none hover:bg-transparent text-xl uppercase"><span
+                                class="text-red-color">Tea</span>
+                            House</a>
+                    </div>
+                    <div class="lg:flex lg:justify-end">
+                        <div class="navbar-center hidden lg:flex lg:justify-end">
+                            <ul class="menu menu-horizontal px-1 gap-3">
+                                <li><a
+                                        class="duration-0 hover:bg-gradient-to-r from-red-color to-yellow-color hover:text-white">Home</a>
+                                </li>
+                                <li><a
+                                        class="duration-0 hover:bg-gradient-to-r from-red-color to-yellow-color hover:text-white">About</a>
+                                </li>
+                                <li><a
+                                        class="duration-0 hover:bg-gradient-to-r from-red-color to-yellow-color hover:text-white">Blog</a>
+                                </li>
+                                <li><a
+                                        class="duration-0 hover:bg-gradient-to-r from-red-color to-yellow-color hover:text-white">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navbar-end lg:inline-block">
+                            <a
+                                class="btn bg-gradient-to-r from-red-color to-yellow-color border-none hover:bg-transparent text-white px-5">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end-->
+
+        <!-- banner start -->
+        <!-- banner end -->
 
     </header>
 
