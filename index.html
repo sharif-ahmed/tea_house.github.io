@@ -27,6 +27,8 @@
                         'red-color': '#F00',
                         'dark-color': '#1C1C1C',
                         'dark-light': '#777',
+                        redTransparent10: 'rgba(255, 0, 0, 0.10)',
+                        orangeTransparent10: 'rgba(255, 137, 56, 0.10)',
                         clifford: '#da373d',
                     }
                 }
@@ -367,8 +369,64 @@
         <!-- news event end -->
     </main>
 
-    <footer>
+    <footer class="py-20 bg-gradient-to-r from-red-100 to-orange-300">
+        <div class="container mx-auto ">
+            <footer class="footer px-10 py-4  text-base-content items-center">
+                <div class="items-center grid-flow-col">
+                    <figure>
+                        <img src="./img/cup.png" alt="">
+                    </figure>
+                </div>
+                <div class="md:place-self-center md:justify-self-end items-center">
+                    <div class="grid md:grid-flow-col gap-4 items-center">
+                        <p class="text-[#494949]">Ready to get strated?</p>
+                        <a class="btn 
+                            bg-gradient-to-r from-red-color to-yellow-color 
+                            border-none 
+                            hover:bg-transparent
+                             text-white text-[20px] font-bold normal-case
+                             rounded-lg">Get Started</a>
+                    </div>
+                </div>
+            </footer>
+            <footer class="footer p-10 text-base-content text-center flex-col lg:justify-between">
+                <div>
+                    <span class="footer-title text-xl font-semibold text-dark-color normal-case">Quick Links</span>
+                    <a class="link link-hover text-[#494949] font-normal text-base">Branding</a>
+                    <a class="link link-hover text-[#494949] font-normal text-base">Design</a>
+                    <a class="link link-hover text-[#494949] font-normal text-base">Marketing</a>
+                    <a class="link link-hover text-[#494949] font-normal text-base">Advertisement</a>
+                </div>
+                <div>
+                    <span class="footer-title text-xl font-semibold text-dark-color normal-case">Our Service</span>
+                    <a class="link link-hover text-[#494949] font-normal text-base">About us</a>
+                    <a class="link link-hover text-[#494949] font-normal text-base">Contact</a>
+                    <a class="link link-hover text-[#494949] font-normal text-base">Jobs</a>
+                    <a class="link link-hover text-[#494949] font-normal text-base">Press kit</a>
+                </div>
+                <div>
+                    <span class="footer-title text-xl font-semibold text-dark-color normal-case">Help</span>
+                    <a class="link link-hover text-[#494949] font-normal text-base">FAQs</a>
+                    <a class="link link-hover text-[#494949] font-normal text-base">Contact Us</a>
+                </div>
+                <div>
+                    <span class="footer-title text-xl font-semibold text-dark-color normal-case">Subscribe to our <br>
+                        newsletter</span>
+                    <div class="form-control">
+                        <div class="flex gap-2">
+                            <input type="text" placeholder="Email Address"
+                                class="bg-none outline-none border-b-2 border-[#494949] bg-transparent placeholder-[#494949]" />
+                            <a
+                                class="w-12 h-12 rounded-full btn bg-gradient-to-r from-red-color to-yellow-color border-none hover:bg-transparent text-white px-5">
+                                <i class=" text-white fa-solid fa-angle-right w-4 h-4 text-center leading-4"></i>
+                            </a>
 
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
     </footer>
 </body>
 
